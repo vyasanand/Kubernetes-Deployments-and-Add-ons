@@ -5,26 +5,30 @@ provider "azurerm" {
     features {}
 }
 
-# Variable to capture run-time location parameter
+# Store run time parameter in loc variable
 variable "loc" {
     type = string
 }
 
+# Variable to prepend every resource
 variable "name" {
   type = string
   default = "kubernetes"
 }
 
+# Login username for every machine
 variable "admin_username" {
   type = string
   default = "kubeadmin"
 }
 
+# Define resource group name
 resource "azurerm_resource_group" "rg" {
     name = var.name
     location= var.loc
 }
 
+# Define virtual network
 resource "azurerm_virtual_network" "vnet" {
       name= "${var.name}-vnet"
       address_space = ["10.240.0.0/24"]
@@ -32,6 +36,7 @@ resource "azurerm_virtual_network" "vnet" {
       resource_group_name = azurerm_resource_group.rg.name
   }
 
+# Define subnet
 resource "azurerm_subnet" "subnet" {
   name                 = "${var.name}-subnet"
   virtual_network_name = azurerm_virtual_network.vnet.name
@@ -40,13 +45,16 @@ resource "azurerm_subnet" "subnet" {
 
 }
 
+# Create ssh keys
 resource "tls_private_key" "kubeadmin_ssh" {
   algorithm = "RSA"
   rsa_bits = 4096
 }
 
+# Display private key at console
 output "tls_private_key" { value = "${tls_private_key.kubeadmin_ssh.private_key_pem}" }
 
+# Create 3 public ips to assign to NIC
 resource "azurerm_public_ip" "kubernetes_pip" {
   count               = 3
   name                = "${azurerm_resource_group.rg.name}-${count.index+1}-pip"
@@ -56,6 +64,7 @@ resource "azurerm_public_ip" "kubernetes_pip" {
   sku                 = "Basic"
 }
 
+# Create 3 NIC to assign to VM
 resource "azurerm_network_interface" "kubernetes_nic" {
   count               = 3
   name                = "${azurerm_resource_group.rg.name}-${count.index+1}-nic"
@@ -73,6 +82,7 @@ resource "azurerm_network_interface" "kubernetes_nic" {
   }
 }
 
+# Create 3 VMs
 resource "azurerm_linux_virtual_machine" "kubernetes-vm" {
   count = 3
   name = "${azurerm_resource_group.rg.name}-${count.index+1}"
