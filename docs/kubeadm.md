@@ -14,4 +14,7 @@ Below are the pre-requirements that we will perform in order to install the clus
 05) Unique hostname, MAC address, and product_uuid for every node
 06) Certain ports are open on your machines (Current setup has no restrictions on the ports, not recommended for prod)
 07) Swap disabled
+08) Verify br_netfilter module is loaded
+09) Linux nodes iptables to correctly see bridged traffic
+10) Installing Runtime (We will use Docker as our container runtime)
 ```
