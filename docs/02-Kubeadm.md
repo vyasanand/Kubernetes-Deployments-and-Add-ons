@@ -130,7 +130,7 @@ ssh -i kubeadmin_ssh_privatekey.pem kubeadmin@$ip "sudo yum install -y yum-utils
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo; \
 sudo yum update -y ; \
 sudo yum install -y containerd.io-1.2.13 docker-ce-19.03.11 docker-ce-cli-19.03.11; \
-sudo mkdir -p /etc/systemd/system/docker.service.d ; \
+sudo mkdir -p /etc/systemd/system/docker.service.d"
 done
 ```
 ```shell
