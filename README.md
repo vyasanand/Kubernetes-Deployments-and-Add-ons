@@ -24,6 +24,6 @@ Worker-2      |  Kubernetes-3
 
 # Deployments
 
-* [Provision Infra on Azure](docs/01-ProvisionInfra.md)
+* [Provision Infra on Azure Cloud](docs/01-ProvisionInfra.md)
 * [Create a Kubernetes cluster using kubeadm](docs/02-Kubeadm.md)
 * [Create a Kubernetes cluster using kubespray](docs/03-Kubespray.md)
