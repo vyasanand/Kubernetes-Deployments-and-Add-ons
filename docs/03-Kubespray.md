@@ -5,14 +5,6 @@ In this demo we will setup a 3 node Kubernetes cluster using kubespray.
 
 For this demo I have provisioned three machines on Azure cloud. Check the [Provisioning Infrastructure](docs/01-ProvisionInfra.md) page for the steps.
 
-```shell
-Component     Hostname
---------------------------
-Control-Plane kubernetes-1
-Worker-1      kubernetes-2
-Worker-2      kubernetes-3
-```
-
 #### Hardware and OS
 Below are the pre-requirements that we will perform in order to install the cluster without any issues. Check the [kubespray GitHub page](https://github.com/kubernetes-sigs/kubespray#requirements) for detailed list of pre-requirements.
 
