@@ -12,16 +12,6 @@ MobaXterm has local terminal features that allow to run Unix commands on your lo
 
 In order to quickly provision infra, I have shared Terraform script which can quickly launch VMs on Azure cloud. Most of the environments would be three machine cluster unless there is a requirement in design for HA.
 
-```shell
--------------------------------
-Component     |  Host-name
--------------------------------
-Control-Plane |  Kubernetes-1
-Worker-1      |  Kubernetes-2
-Worker-2      |  Kubernetes-3
--------------------------------
-```
-
 # Deployments
 
 * [Provision Infra on Azure Cloud](docs/01-ProvisionInfra.md)
