@@ -11,7 +11,7 @@ Below are the pre-requirements that we will perform in order to install the clus
 02) Control Plane node memory: 1.5GB, Worker nodes memory: 1GB
 03) Ansible v2.9+, Jinja 2.11+ and python-netaddr is installed on the machine that will run Ansible commands
 04) The target servers are configured to allow IPv4 forwarding
-05) Your ssh key must be copied to all the servers part of your inventory
+05) SSH key to connect to all servers
 ```
 Run the below steps to validate and perform the required pre-requirements
 
@@ -57,25 +57,20 @@ CPU(s):                2
 CPU family:            6
 CPU MHz:               2095.078
 ```
-
-Copy SSH key to each server
-
-```shell
-for ip in `cat ~/ips.txt`
-do
-scp -i kubeadmin_ssh_privatekey.pem kubeadmin_ssh_privatekey.pem kubeadmin@$ip:/home/kubeadmin
-done
-```
-> Output
-
-```shell
-kubeadmin_ssh_privatekey.pem                                                                                   100% 3244   321.8KB/s   00:00
-kubeadmin_ssh_privatekey.pem                                                                                   100% 3244   401.5KB/s   00:00
-kubeadmin_ssh_privatekey.pem                                                                                   100% 3244   353.4KB/s   00:00
-```
-
 We will be using control-plane node ```kubernetes-1``` as our Ansible host. Fetch the Public IP of the host.
 
 ```shell
-
+IP1=`az vm show -d -g kubernetes --name kubernetes-1 --query publicIps -o tsv  | tr -d [:space:]`
 ```
+Copy SSH key to control-plane server ```kubernetes-1```
+
+```shell
+scp -i kubeadmin_ssh_privatekey.pem kubeadmin_ssh_privatekey.pem kubeadmin@$IP1:/home/kubeadmin
+```
+
+Install required packages on the Ansible host ```kubernetes-1```
+
+```shell
+ssh -i kubeadmin_ssh_privatekey.pem kubeadmin@$IP1 "sudo yum -y install python3 python3-pip git"
+```
+
