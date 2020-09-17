@@ -1,4 +1,4 @@
-# Provisioning Infrastructure
+# Provisioning Infrastructure on Azure Cloud
 
 To install Kubernetes we need to provision virtual machines which will host the control plane and worker components. In this demo, I will be using [Microsoft Azure](https://azure.microsoft.com) cloud. You can provision your own VMs on any of the cloud provider or local machine.
 
