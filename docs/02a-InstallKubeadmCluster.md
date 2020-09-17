@@ -179,3 +179,5 @@ kubernetes-2   NotReady   <none>   105s   v1.19.1
 kubernetes-3   NotReady   <none>   95s    v1.19.1
 ```
 > Dont worry about the ```NotReady``` status. We are yet to install a network add-on.
+
+Next Step: [Deploy Networking Add-on](04-Deploy-network-add-on.md)
