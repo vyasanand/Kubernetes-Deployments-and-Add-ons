@@ -6,7 +6,7 @@ In this project I have used [Microsoft Azure](https://azure.microsoft.com) to pr
 
 ### Client Tools
 
-In this lab I will be using [MobaXterm](https://mobaxterm.mobatek.net/) to run the Azure CLI. Follow the [documentation](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest&tabs=azure-cli) to Install Azure CLI on Windows.
+In this project I will be using [MobaXterm](https://mobaxterm.mobatek.net/) to run the Azure CLI. Follow the [documentation](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest&tabs=azure-cli) to Install Azure CLI on Windows.
 
 MobaXterm has local terminal features that allow to run Unix commands on your local Windows computer [Start Local Terminal](https://mobaxterm.mobatek.net/documentation.html#2_2)
 
