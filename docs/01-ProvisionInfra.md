@@ -156,10 +156,18 @@ kubernetes-2  kubernetes       VM running    xx.xx.xxx.xxx           southeastas
 kubernetes-3  kubernetes       VM running    xx.xx.xx.xxx            southeastasia
 ```
 
+```shell
+for i in 1 2 3; \
+do \
+az vm show -d -g kubernetes --name kubernetes-$i --query publicIps -o tsv | tr -d [:space:] >> ~/ips.txt; \
+echo " " >> ~/ips.txt; \
+done
+```
+
 SSH to the machines using private key we have saved in above step
 
 ```shell
-for ip in xx.xx.xx.xx xx.xx.xxx.xxx xx.xx.xx.xxx
+for ip in `cat ~/ips.txt`
 do
 ssh -i kubeadmin_ssh_privatekey.pem kubeadmin@$ip "hostname -s"
 done
