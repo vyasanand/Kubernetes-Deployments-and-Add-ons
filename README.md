@@ -1,4 +1,4 @@
-# Kubernetes-add-ons-and-deployments
+# Kubernetes-deployments-and-add-ons
 
 This project is to share different ways and methods of deploying kubernetes cluster, deployments and add-ons. This is NOT for people who are looking to learn kubernetes the hard way. You can check out my other project to build [kubernetes-the-hard-way-on-azure](https://github.com/vyasanand/kubernetes-the-hard-way-on-azure).
 
