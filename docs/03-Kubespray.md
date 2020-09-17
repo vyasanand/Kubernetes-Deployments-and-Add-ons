@@ -157,7 +157,7 @@ drwxrwxr-x. 4 kubeadmin kubeadmin  52 Sep 17 07:26 group_vars
 -rw-rw-r--. 1 kubeadmin kubeadmin 994 Sep 17 07:26 inventory.ini
 ```
 
-We need to build a ```hosts``` file for the ansible playbook. For this we would required public IPs of the machines. Run the below command on the terminal window.
+We need to build a ```hosts``` file for our ansible playbook. Below commands will create the file and make required changes.
 
 ```shell
 {
