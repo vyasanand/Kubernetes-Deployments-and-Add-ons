@@ -185,3 +185,5 @@ Connection: keep-alive
 ETag: "5f32b03b-264"
 Accept-Ranges: bytes
 ```
+
+Next: [Clean up](06-Cleanup.md)
