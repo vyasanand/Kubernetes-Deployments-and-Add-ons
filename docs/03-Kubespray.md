@@ -199,26 +199,30 @@ time ansible-playbook -i inventory/mykubecluster/hosts.yaml -u kubeadmin -b -v -
 
 ```shell
 ===============================================================================
-kubernetes/master : kubeadm | Initialize first master ----------------------------------------------------------------------------------- 28.57s
-kubernetes/kubeadm : Join to cluster ---------------------------------------------------------------------------------------------------- 25.10s
-kubernetes-apps/ansible : Kubernetes Apps | Start Resources ------------------------------------------------------------------------------ 9.65s
-kubernetes-apps/ansible : Kubernetes Apps | Lay Down CoreDNS Template -------------------------------------------------------------------- 6.97s
-etcd : wait for etcd up ------------------------------------------------------------------------------------------------------------------ 5.54s
-kubernetes/preinstall : Install packages requirements ------------------------------------------------------------------------------------ 5.41s
-download : download | Download files / images -------------------------------------------------------------------------------------------- 5.34s
-etcd : Configure | Check if etcd cluster is healthy -------------------------------------------------------------------------------------- 5.30s
-kubernetes/preinstall : Get current version of calico cluster version -------------------------------------------------------------------- 4.09s
-Gather necessary facts ------------------------------------------------------------------------------------------------------------------- 3.97s
-network_plugin/calico : Get current version of calico cluster version -------------------------------------------------------------------- 3.75s
-network_plugin/calico : Start Calico resources ------------------------------------------------------------------------------------------- 3.66s
-container-engine/docker : ensure docker packages are installed --------------------------------------------------------------------------- 3.61s
-network_plugin/calico : Calico | Create calico manifests --------------------------------------------------------------------------------- 3.55s
-download : download | Download files / images -------------------------------------------------------------------------------------------- 3.30s
-download : download | Download files / images -------------------------------------------------------------------------------------------- 3.03s
-policy_controller/calico : Create calico-kube-controllers manifests ---------------------------------------------------------------------- 2.93s
-download : download | Download files / images -------------------------------------------------------------------------------------------- 2.84s
-download : download | Download files / images -------------------------------------------------------------------------------------------- 2.78s
-download : download | Download files / images -------------------------------------------------------------------------------------------- 2.77s
+kubernetes/preinstall : Install packages requirements ----------------------------------------------------------------------------------- 74.96s
+container-engine/docker : ensure docker packages are installed -------------------------------------------------------------------------- 66.90s
+kubernetes/kubeadm : Join to cluster ---------------------------------------------------------------------------------------------------- 30.78s
+kubernetes/master : kubeadm | Initialize first master ----------------------------------------------------------------------------------- 23.51s
+download : download_container | Download image if required ------------------------------------------------------------------------------ 19.50s
+download : download_container | Download image if required ------------------------------------------------------------------------------ 13.18s
+download : download_container | Download image if required ------------------------------------------------------------------------------ 10.98s
+download : download_container | Download image if required ------------------------------------------------------------------------------ 10.71s
+etcd : wait for etcd up ------------------------------------------------------------------------------------------------------------------ 9.79s
+kubernetes-apps/ansible : Kubernetes Apps | Start Resources ------------------------------------------------------------------------------ 9.67s
+download : download_container | Download image if required ------------------------------------------------------------------------------- 9.60s
+download : download_container | Download image if required ------------------------------------------------------------------------------- 9.44s
+etcd : Configure | Wait for etcd cluster to be healthy ----------------------------------------------------------------------------------- 8.71s
+download : download_container | Download image if required ------------------------------------------------------------------------------- 7.71s
+download : download_container | Download image if required ------------------------------------------------------------------------------- 7.35s
+download : download_container | Download image if required ------------------------------------------------------------------------------- 7.18s
+download : download_container | Download image if required ------------------------------------------------------------------------------- 7.13s
+download : check_pull_required |  Generate a list of information about the images on a node ---------------------------------------------- 7.11s
+kubernetes-apps/ansible : Kubernetes Apps | Lay Down CoreDNS Template -------------------------------------------------------------------- 7.10s
+download : download_file | Download item ------------------------------------------------------------------------------------------------- 7.01s
+
+real    12m37.518s
+user    5m27.788s
+sys     1m43.218s
 ```
 > Make sure there are no failures from the above execution
 
