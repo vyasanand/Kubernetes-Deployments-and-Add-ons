@@ -35,7 +35,7 @@ cd terraform
 Download the tf file.
 
 ```shell
-wget https://github.com/vyasanand/Kubernetes-add-ons-and-deployments/blob/master/config/deployazureinfra.tf
+wget https://raw.githubusercontent.com/vyasanand/Kubernetes-deployments-and-add-ons/master/config/deployazureinfra.tf
 ```
 > Verify the file is downloaded
 
