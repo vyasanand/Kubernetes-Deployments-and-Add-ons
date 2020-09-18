@@ -136,6 +136,8 @@ yL+k1o2Q/0XoeQp3XjUUM++XM8fR7V0xVtmUorDmgqJI+yH2q/iqFAgb7sZswpdK
 
 Copy the private key starting from ```-----BEGIN RSA PRIVATE KEY-----``` till ```-----END RSA PRIVATE KEY-----``` into a file ```kubeadmin_ssh_privatekey.pem```.This key will be used to login to VMs.
 
+If you are running Terraform on MobaXTerm you can run the command ```terraform.exe output tls_private_key > kubeadmin_ssh_privatekey.pem```
+
 > Output
 
 ```shell
