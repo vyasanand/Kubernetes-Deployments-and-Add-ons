@@ -153,11 +153,14 @@ Expose the `nginx` deployment using a [NodePort](https://kubernetes.io/docs/conc
 kubectl expose deployment nginx --port 80 --type NodePort
 ```
 
-Retrieve the node port assigned to the `nginx` service:
+Retrieve the node port assigned to the `nginx` service and the host where the pod is running.
 
 ```shell
 NODE_PORT=$(kubectl get svc nginx \
   --output=jsonpath='{range .spec.ports[0]}{.nodePort}')
+```
+```shell
+kubectl get pods -l app=nginx --output=jsonpath='{.items[*].spec.nodeName}'
 ```
 
 Assign the public IP of worker node assigned to nginx pod.
