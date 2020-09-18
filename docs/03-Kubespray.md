@@ -27,7 +27,8 @@ done
 ```shell
 for ip in `cat ~/ips.txt`
 do
-ssh -i kubeadmin_ssh_privatekey.pem kubeadmin@$ip "cat /etc/redhat-release;free -g;lscpu | grep ^CPU"
+ssh -i kubeadmin_ssh_privatekey.pem kubeadmin@$ip "cat /etc/redhat-release;free -g;lscpu | grep ^CPU; \
+sudo systemctl stop firewalld"
 done
 ```
 ```shell
