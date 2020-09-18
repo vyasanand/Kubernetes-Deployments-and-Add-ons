@@ -23,9 +23,19 @@ kubectl get pods -n kube-system
 > output
 
 ```shell
-NAME                       READY   STATUS              RESTARTS   AGE
-weave-net-kfsb9            2/2     Running             0          110s
-weave-net-vsc25            2/2     Running             0          110s
+NAME                                   READY   STATUS    RESTARTS   AGE
+coredns-f9fd979d6-pxw4z                1/1     Running   0          9m40s
+coredns-f9fd979d6-q97wl                1/1     Running   0          9m40s
+etcd-kubernetes-1                      1/1     Running   0          9m46s
+kube-apiserver-kubernetes-1            1/1     Running   0          9m46s
+kube-controller-manager-kubernetes-1   1/1     Running   0          9m46s
+kube-proxy-btfm4                       1/1     Running   0          8m25s
+kube-proxy-jvf5z                       1/1     Running   0          9m40s
+kube-proxy-thw94                       1/1     Running   0          8m34s
+kube-scheduler-kubernetes-1            1/1     Running   0          9m46s
+weave-net-bb59x                        2/2     Running   0          46s
+weave-net-jgqm9                        2/2     Running   0          46s
+weave-net-vdxns                        2/2     Running   0          46s
 ```
 
 
