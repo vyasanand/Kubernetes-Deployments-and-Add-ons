@@ -18,3 +18,4 @@ In order to quickly provision infra, I have shared Terraform script which can qu
 * [Create a Kubernetes cluster using kubeadm](docs/02-Kubeadm.md)
 * [Create a Kubernetes cluster using kubespray](docs/03-Kubespray.md)
 * [Install Visualization add-on - Weave Scope](docs/07-Install-Weave-Scope.md)
+* [Install Portainer](docs/08-Portainer.md)
