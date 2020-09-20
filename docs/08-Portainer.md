@@ -224,7 +224,7 @@ Click on the ```local``` cluster on the ```Home Page``` and it would redirect to
 
 Let's deploy an application using the UI. Click on the ```Applications``` tab from the side menu bar. On the ```Application list``` page click on the ```Add application``` button.
 
-![add_app](/config/add_app.PNG)
+![add_app](/config/add_app.PNG) 
 
 Give the name as ```my-first-deployment``` and image as ```nginx:latest```. Leave all the other options as default and click on ```Deploy application``` action at the bottom of the page
 
