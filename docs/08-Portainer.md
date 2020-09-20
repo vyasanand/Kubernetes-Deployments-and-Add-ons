@@ -264,7 +264,7 @@ Delete the pv created
 ```shell
 kubectl delete pv portainer
 ```
-> Output
+> Output 
 
 ```shell
 persistentvolume "portainer" deleted
