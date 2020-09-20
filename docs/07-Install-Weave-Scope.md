@@ -1,5 +1,7 @@
 # Install Visualization add-on - Weave Scope
 
+Weave Scope automatically generates a map of your application, enabling you to intuitively understand, monitor, and control your containerized, microservices-based application. You can manage all these from a UI.
+
 ## Pre-requirements
 
 To install [Weave Scope](https://github.com/weaveworks/scope) add-on you will need a working Kubernetes cluster. You can follow the steps here to install a cluster using [Kubeadm](02-Kubeadm.md) or [Kubespray](03-Kubespray.md)
