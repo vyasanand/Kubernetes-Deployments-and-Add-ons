@@ -1,4 +1,4 @@
-# Deploy a Azure Managed Kubernetes Cluster (AKS) using Terraform
+# Deploy Azure Managed Kubernetes Cluster (AKS) using Terraform
 
 In this demo we will deploy a AKS cluster with three nodes.
 
