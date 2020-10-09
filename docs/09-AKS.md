@@ -4,7 +4,7 @@ In this demo we will deploy a AKS cluster with three nodes.
 
 ## Terraform
 
-If you are using Terraform for the first time follow the steps in the link to [Install Terraform](docs/01-ProvisionInfra.md#installation)
+If you are using Terraform for the first time follow the steps in the link to [Install Terraform](/docs/01-ProvisionInfra.md#installation)
 
 ### Deploy AKS Cluster
 
@@ -147,7 +147,7 @@ aks-default-12345678-vmss000002   Ready    agent   9m34s   v1.17.11
 
 ### Validation
 
-Run the busybox [validation](docs/05-Validation.md#validation). Services can be created but not accessible as we haven't provisioned HTTP LB in our cluster.
+Run the busybox [validation](/docs/05-Validation.md#validation). Services can be created but not accessible as we haven't provisioned HTTP LB in our cluster.
 
 ### Clean up
 
