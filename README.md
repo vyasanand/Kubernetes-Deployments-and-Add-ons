@@ -19,4 +19,4 @@ In order to quickly provision infra, I have shared Terraform script which can qu
 * [Create a Kubernetes cluster using kubespray](docs/03-Kubespray.md)
 * [Install Visualization add-on - Weave Scope](docs/07-Install-Weave-Scope.md)
 * [Install Portainer](docs/08-Portainer.md)
-* [Deploy an Azure Managed Kubernetes Cluster (AKS) using Terraform](docs/09-AKS.md)
+* [Deploy Azure Managed Kubernetes Cluster (AKS) using Terraform](docs/09-AKS.md)
