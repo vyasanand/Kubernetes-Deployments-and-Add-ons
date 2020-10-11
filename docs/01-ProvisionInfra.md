@@ -4,7 +4,7 @@ To install Kubernetes we need to provision virtual machines which will host the 
 
 ## High Level View
 
-![High_Level_View](/config/arch.png)
+![High_Level_View](/config/azure1.png)
 
 ## Terraform
 In order to quickly provision infra on Azure, I have created a [Terraform](https://www.terraform.io/downloads.html) script that will provision 3 VMs.
