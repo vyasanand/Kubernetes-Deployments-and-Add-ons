@@ -101,7 +101,6 @@ ssh: connect to host 52.139.198.189 port 22: Connection timed out
 
 As expected you can only connect via SSH to ```Control-Plane node```. You can access ```Worker nodes``` from it.
 
-Run the kubernetes [validation](https://github.com/vyasanand/Kubernetes-deployments-and-add-ons/blob/master/docs/05-Validation.md#validation)
-
+Next: Run the [validation](https://github.com/vyasanand/Kubernetes-deployments-and-add-ons/blob/master/docs/05-Validation.md#validation) on kubernetes cluster to make sure ```nsg``` deployment doesn't cause any impact.
 
 
