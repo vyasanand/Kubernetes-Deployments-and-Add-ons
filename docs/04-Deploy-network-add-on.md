@@ -39,4 +39,4 @@ weave-net-vdxns                        2/2     Running   0          46s
 ```
 
 
-Next: [Validation](05-Validation.md) or [Add Network Security Group](10-add-nsg.md)
+Next: [Validation](05-Validation.md) or [Add Network Security Group](10-add-nsg.md) or [Add a New Worker Node](11-add-new-node.md)
