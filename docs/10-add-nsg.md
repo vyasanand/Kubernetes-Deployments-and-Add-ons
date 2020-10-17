@@ -61,7 +61,7 @@ terraform.exe apply -var 'loc=southeastasia'
 > Output
 
 ```shell
-PPlan: 5 to add, 0 to change, 0 to destroy.
+Plan: 5 to add, 0 to change, 0 to destroy.
 
 Do you want to perform these actions?
   Terraform will perform the actions described above.
