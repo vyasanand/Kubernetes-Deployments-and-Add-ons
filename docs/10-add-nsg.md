@@ -1,6 +1,6 @@
 # Add Network Security Group
 
-If you have deployed Azure infra using [Terraform script](docs/01-ProvisionInfra.md) as part of this project, you might have noticed there is no security group attached to kubernetes-vnet.
+If you have deployed Azure infra using [Terraform script](/docs/01-ProvisionInfra.md) as part of this project, you might have noticed there is no security group attached to kubernetes-vnet.
 While this setup works fine for learning or development environment, it's always a best practice to secure the cluster.
 
 In this post we will add ```Network Security Group (nsg) ``` to our deployed infra on Azure.
