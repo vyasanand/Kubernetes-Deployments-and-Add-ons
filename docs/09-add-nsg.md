@@ -82,6 +82,31 @@ tls_private_key = -----BEGIN RSA PRIVATE KEY-----
 
 ### Validation
 
+Run the below command to list the nsg rules.
+
+```shell
+{
+az network nsg rule list -g kubernetes --nsg-name kubernetes-control-plane-nsg \
+--query "[].{Name:name, Direction:direction, Priority:priority, Port:destinationPortRange}" -o table
+az network nsg rule list -g kubernetes --nsg-name kubernetes-worker-nsg \
+--query "[].{Name:name, Direction:direction, Priority:priority, Port:destinationPortRange}" -o table
+}
+```
+> Output
+
+```shell
+Name                                                Direction    Priority    Port
+--------------------------------------------------  -----------  ----------  -----------
+Kubelet_API_Kube_Scheduler_Kube_Controller_Manager  Inbound      120         10250-10252
+SSH_Access                                          Inbound      130         22
+Kubernetes_API_Server                               Inbound      100         6443
+ETCD_Server_Client_API                              Inbound      110         2379-2380
+Name                     Direction    Priority    Port
+-----------------------  -----------  ----------  -----------
+Node_Port_Service_Range  Inbound      110         30000-32767
+Kubelet_API              Inbound      100         10250
+```
+
 Run the below command to validate SSH connectivity to the hosts.
 
 ```shell
