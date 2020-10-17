@@ -42,19 +42,19 @@ done
 
 ```shell
 X11 forwarding request failed on channel 0
-kubeadm version: &version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.1", GitCommit:"206bcadf021e76c27513500ca24182692aabd17e", GitTreeState:"clean", BuildDate:"2020-09-09T11:24:31Z", GoVersion:"go1.15", Compiler:"gc", Platform:"linux/amd64"}
-Kubernetes v1.19.1
-Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.1", GitCommit:"206bcadf021e76c27513500ca24182692aabd17e", GitTreeState:"clean", BuildDate:"2020-09-09T11:26:42Z", GoVersion:"go1.15", Compiler:"gc", Platform:"linux/amd64"}
+kubeadm version: &version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.3", GitCommit:"1e11e4a2108024935ecfcb2912226cedeafd99df", GitTreeState:"clean", BuildDate:"2020-10-14T12:47:53Z", GoVersion:"go1.15.2", Compiler:"gc", Platform:"linux/amd64"}
+Kubernetes v1.19.3
+Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.3", GitCommit:"1e11e4a2108024935ecfcb2912226cedeafd99df", GitTreeState:"clean", BuildDate:"2020-10-14T12:50:19Z", GoVersion:"go1.15.2", Compiler:"gc", Platform:"linux/amd64"}
 The connection to the server localhost:8080 was refused - did you specify the right host or port?
 X11 forwarding request failed on channel 0
-kubeadm version: &version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.1", GitCommit:"206bcadf021e76c27513500ca24182692aabd17e", GitTreeState:"clean", BuildDate:"2020-09-09T11:24:31Z", GoVersion:"go1.15", Compiler:"gc", Platform:"linux/amd64"}
-Kubernetes v1.19.1
-Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.1", GitCommit:"206bcadf021e76c27513500ca24182692aabd17e", GitTreeState:"clean", BuildDate:"2020-09-09T11:26:42Z", GoVersion:"go1.15", Compiler:"gc", Platform:"linux/amd64"}
+kubeadm version: &version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.3", GitCommit:"1e11e4a2108024935ecfcb2912226cedeafd99df", GitTreeState:"clean", BuildDate:"2020-10-14T12:47:53Z", GoVersion:"go1.15.2", Compiler:"gc", Platform:"linux/amd64"}
+Kubernetes v1.19.3
+Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.3", GitCommit:"1e11e4a2108024935ecfcb2912226cedeafd99df", GitTreeState:"clean", BuildDate:"2020-10-14T12:50:19Z", GoVersion:"go1.15.2", Compiler:"gc", Platform:"linux/amd64"}
 The connection to the server localhost:8080 was refused - did you specify the right host or port?
 X11 forwarding request failed on channel 0
-kubeadm version: &version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.1", GitCommit:"206bcadf021e76c27513500ca24182692aabd17e", GitTreeState:"clean", BuildDate:"2020-09-09T11:24:31Z", GoVersion:"go1.15", Compiler:"gc", Platform:"linux/amd64"}
-Kubernetes v1.19.1
-Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.1", GitCommit:"206bcadf021e76c27513500ca24182692aabd17e", GitTreeState:"clean", BuildDate:"2020-09-09T11:26:42Z", GoVersion:"go1.15", Compiler:"gc", Platform:"linux/amd64"}
+kubeadm version: &version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.3", GitCommit:"1e11e4a2108024935ecfcb2912226cedeafd99df", GitTreeState:"clean", BuildDate:"2020-10-14T12:47:53Z", GoVersion:"go1.15.2", Compiler:"gc", Platform:"linux/amd64"}
+Kubernetes v1.19.3
+Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.3", GitCommit:"1e11e4a2108024935ecfcb2912226cedeafd99df", GitTreeState:"clean", BuildDate:"2020-10-14T12:50:19Z", GoVersion:"go1.15.2", Compiler:"gc", Platform:"linux/amd64"}
 The connection to the server localhost:8080 was refused - did you specify the right host or port?
 ```
 
@@ -112,7 +112,7 @@ kubectl get nodes
 
 ```shell
 NAME           STATUS     ROLES    AGE    VERSION
-kubernetes-1   NotReady   master   5m3s   v1.19.1
+kubernetes-1   NotReady   master   5m3s   v1.19.3
 ```
 
 Run the below commands to get the public IPs for our worker nodes.
@@ -174,9 +174,9 @@ kubectl get nodes
 
 ```shell
 NAME           STATUS     ROLES    AGE    VERSION
-kubernetes-1   NotReady   master   11m    v1.19.1
-kubernetes-2   NotReady   <none>   105s   v1.19.1
-kubernetes-3   NotReady   <none>   95s    v1.19.1
+kubernetes-1   NotReady   master   11m    v1.19.3
+kubernetes-2   NotReady   <none>   105s   v1.19.3
+kubernetes-3   NotReady   <none>   95s    v1.19.3
 ```
 > Dont worry about the ```NotReady``` status. We are yet to install a network add-on.
 

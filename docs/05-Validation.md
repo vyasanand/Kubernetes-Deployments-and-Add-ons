@@ -140,7 +140,7 @@ kubectl exec -ti $POD_NAME -- nginx -v
 > output
 
 ```shell
-nginx version: nginx/1.19.2
+nginx version: nginx/1.19.3
 ```
 
 ## Services
@@ -179,7 +179,7 @@ curl -I http://$EXTERNAL_IP:$NODE_PORT
 
 ```shell
 HTTP/1.1 200 OK
-Server: nginx/1.19.2
+Server: nginx/1.19.3
 Date: Thu, 17 Sep 2020 15:35:00 GMT
 Content-Type: text/html
 Content-Length: 612

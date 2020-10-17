@@ -133,6 +133,36 @@ sudo yum install -y containerd.io-1.2.13 docker-ce-19.03.11 docker-ce-cli-19.03.
 sudo mkdir -p /etc/systemd/system/docker.service.d"
 done
 ```
+
+If you see below issue after running the above command, its a known issue: [CentOS 7/RHEL 7 installations broken](https://github.com/docker/for-linux/issues/1111)
+
+```shell
+failure: repodata/repomd.xml from docker-ce-stable: [Errno 256] No more mirrors to try.
+https://download.docker.com/linux/centos/7Server/x86_64/stable/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
+Loaded plugins: langpacks, product-id, search-disabled-repos
+https://download.docker.com/linux/centos/7Server/x86_64/stable/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
+Trying other mirror.
+```
+
+To fix it run the below command and run the original command again.
+
+```shell
+for ip in `cat ~/ips.txt`
+do
+ssh -i kubeadmin_ssh_privatekey.pem kubeadmin@$ip "sudo sed -i 's_\$releasever_7_g' /etc/yum.repos.d/docker-ce.repo"
+done
+```
+
+```shell
+for ip in `cat ~/ips.txt`
+do
+ssh -i kubeadmin_ssh_privatekey.pem kubeadmin@$ip "sudo yum install -y yum-utils device-mapper-persistent-data lvm2; \
+sudo yum update -y ; \
+sudo yum install -y containerd.io-1.2.13 docker-ce-19.03.11 docker-ce-cli-19.03.11; \
+sudo mkdir -p /etc/systemd/system/docker.service.d"
+done
+```
+
 ```shell
 for ip in `cat ~/ips.txt`
 do
