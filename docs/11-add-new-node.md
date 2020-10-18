@@ -270,4 +270,4 @@ kube-proxy-p9mp6                       1/1     Running   0          6m26s   10.2
 weave-net-kv5v2                        2/2     Running   1          6m26s   10.240.0.14   kubernetes-4   <none>           <none>
 ```
 
-Next: [Validation](/docs/05-Validation.md) or [Other Add-Ons](README.md)
+Next: [Validation](/docs/05-Validation.md) or [Other Add-Ons](/README.md)
