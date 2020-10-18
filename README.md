@@ -22,3 +22,4 @@ In order to quickly provision infra, I have shared Terraform script which can qu
 * [Deploy Azure Managed Kubernetes Cluster (AKS) using Terraform](docs/09-AKS.md)
 * [Secure the Cluster by Adding Network Security Group](docs/10-add-nsg.md)
 * [Add Node to Kubernetes Cluster (Kubeadm)](docs/11-add-new-node.md)
+* [Add Node to Kubernetes Cluster (Kubespray)](docs/12-add-new-node-kubespray.md)
