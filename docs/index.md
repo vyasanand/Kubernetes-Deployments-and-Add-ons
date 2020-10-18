@@ -14,12 +14,12 @@ In order to quickly provision infra, I have shared Terraform script which can qu
 
 # Deployments
 
-* [Provision Infra on Azure Cloud](docs/01-ProvisionInfra.md)
-* [Create a Kubernetes cluster using kubeadm](docs/02-Kubeadm.md)
-* [Create a Kubernetes cluster using kubespray](docs/03-Kubespray.md)
-* [Install Visualization add-on - Weave Scope](docs/07-Install-Weave-Scope.md)
-* [Install Portainer](docs/08-Portainer.md)
-* [Deploy Azure Managed Kubernetes Cluster (AKS) using Terraform](docs/09-AKS.md)
-* [Secure the Cluster by Adding Network Security Group](docs/10-add-nsg.md)
-* [Add Node to Kubernetes Cluster (Kubeadm)](docs/11-add-new-node.md)
-* [Add Node to Kubernetes Cluster (Kubespray)](docs/12-add-new-node-kubespray.md)
+* [Provision Infra on Azure Cloud](https://github.com/vyasanand/Kubernetes-deployments-and-add-ons/blob/master/docs/01-ProvisionInfra.md)
+* [Create a Kubernetes cluster using kubeadm](https://github.com/vyasanand/Kubernetes-deployments-and-add-ons/blob/master/docs/02-Kubeadm.md)
+* [Create a Kubernetes cluster using kubespray](https://github.com/vyasanand/Kubernetes-deployments-and-add-ons/blob/master/docs/03-Kubespray.md)
+* [Install Visualization add-on - Weave Scope](https://github.com/vyasanand/Kubernetes-deployments-and-add-ons/blob/master/docs/07-Install-Weave-Scope.md)
+* [Install Portainer](https://github.com/vyasanand/Kubernetes-deployments-and-add-ons/blob/master/docs/08-Portainer.md)
+* [Deploy Azure Managed Kubernetes Cluster (AKS) using Terraform](https://github.com/vyasanand/Kubernetes-deployments-and-add-ons/blob/master/docs/09-AKS.md)
+* [Secure the Cluster by Adding Network Security Group](https://github.com/vyasanand/Kubernetes-deployments-and-add-ons/blob/master/docs/10-add-nsg.md)
+* [Add Node to Kubernetes Cluster (Kubeadm)](https://github.com/vyasanand/Kubernetes-deployments-and-add-ons/blob/master/docs/11-add-new-node.md)
+* [Add Node to Kubernetes Cluster (Kubespray)](https://github.com/vyasanand/Kubernetes-deployments-and-add-ons/blob/master/docs/12-add-new-node-kubespray.md)
