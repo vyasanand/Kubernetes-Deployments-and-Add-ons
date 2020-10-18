@@ -1,4 +1,4 @@
-# Add Node to Kubernetes Cluster
+# Add Node to Kubernetes Cluster (Kubeadm)
 
 In this post we will add a new node to our kubernetes cluster deployed using [Kubeadm](/docs/02-Kubeadm.md)
 
