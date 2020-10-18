@@ -41,7 +41,7 @@ Address 1: 169.254.25.10
 Name:      kubernetes
 Address 1: 10.233.0.1 kubernetes.default.svc.cluster.local
 ```
-Create a deployment for the [nginx](https://nginx.org/en/) web server:
+Create a deployment for the [nginx](https://nginx.com) web server:
 
 ```shell
 kubectl create deployment nginx --image=nginx
