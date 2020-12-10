@@ -32,7 +32,17 @@ Execute a DNS lookup for the `kubernetes` service inside the `busybox` pod:
 kubectl exec -ti $POD_NAME -- nslookup kubernetes
 ```
 
-> output
+> output for kubeadm
+
+```
+Server:    10.96.0.10
+Address 1: 10.96.0.10 kube-dns.kube-system.svc.cluster.local
+
+Name:      kubernetes
+Address 1: 10.96.0.1 kubernetes.default.svc.cluster.local
+```
+
+> output for kubespray
 
 ```
 Server:    169.254.25.10
@@ -93,7 +103,7 @@ curl --head http://127.0.0.1:8082
 
 ```shell
 HTTP/1.1 200 OK
-Server: nginx/1.19.2
+Server: nginx/1.19.5
 Date: Thu, 17 Sep 2020 15:22:15 GMT
 Content-Type: text/html
 Content-Length: 612
@@ -140,7 +150,7 @@ kubectl exec -ti $POD_NAME -- nginx -v
 > output
 
 ```shell
-nginx version: nginx/1.19.3
+nginx version: nginx/1.19.5
 ```
 
 ## Services
@@ -179,7 +189,7 @@ curl -I http://$EXTERNAL_IP:$NODE_PORT
 
 ```shell
 HTTP/1.1 200 OK
-Server: nginx/1.19.3
+Server: nginx/1.19.5
 Date: Thu, 17 Sep 2020 15:35:00 GMT
 Content-Type: text/html
 Content-Length: 612
