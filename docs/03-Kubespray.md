@@ -246,9 +246,9 @@ kubectl get nodes
 ```shell
 NAME           STATUS     ROLES    AGE    VERSION
 NAME           STATUS   ROLES    AGE     VERSION
-kubernetes-1   Ready    master   6m20s   v1.18.8
-kubernetes-2   Ready    <none>   5m16s   v1.18.8
-kubernetes-3   Ready    <none>   5m16s   v1.18.8
+kubernetes-1   Ready    master   6m20s   v1.18.10
+kubernetes-2   Ready    <none>   5m16s   v1.18.10
+kubernetes-3   Ready    <none>   5m16s   v1.18.10
 ```
 
 > Kubespray by default uses Calico as the networking add-on
